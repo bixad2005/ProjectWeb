@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./ItemStatusFilter.css";
 import React, {Component} from 'react';
 
@@ -16,4 +16,3 @@ export default class ItemStatusFilter extends Component {
         )
     }
 }
-export default ItemStatusFilter;
