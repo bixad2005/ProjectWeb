@@ -1,16 +1,19 @@
 import React from 'react';
 import "./ItemStatusFilter.css";
+import React, {Component} from 'react';
 
-const ItemStatusFilter = () => {
-    return (
-        <div className={"btn-group"}>
-            <button type={"button"}
-                    className={"btn btn-info"}>All list</button>
-            <button type={"button"}
+export default class ItemStatusFilter extends Component {
+    render() {
+        return (
+            <div className = {"btn-group"}>
+                <button type ={"button"}
+                    className ={"btn btn-info"}> All List</button>
+                <button type={"button"}
                     className={"btn btn-outline-secondary"}>Active list</button>
-            <button type={"button"}
-                    className={"btn btn-outline-secondary"}>Done</button>
-        </div>
-    );
-};
+                <button type={"button"}
+                    className={"btn btn-ouline-secondary"}>Done</button>
+            </div>
+        )
+    }
+}
 export default ItemStatusFilter;
