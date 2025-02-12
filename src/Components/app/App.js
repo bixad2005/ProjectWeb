@@ -35,9 +35,10 @@ export default class App extends Component {
                 <div className="top-panel d-flex">
                     <SearchPanel />
                     <ItemStatusFilter />
-                    <TodoList todos={this.state.todoData}
-                              onDeleted = {this.deleteItem}/>
-                </div>
+                    </div>
+                <TodoList todos={this.state.todoData}
+                          onDeleted = {this.deleteItem}/>
+
             </div>
         );
     };
