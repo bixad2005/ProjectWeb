@@ -4,10 +4,12 @@ import './TodoListItems.css';
 export default class TodoListItems extends Component{
 
     state = {
-        done: true
+        done: false
     }
     onLabelClick = () => {
-            console.log('Done: $(this.props.label');
+            this.setState({
+                done: true
+            })
         };
 
     render() {
